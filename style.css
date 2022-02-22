@@ -51,14 +51,15 @@ a:hover {
 table, th, td {
   border: 1px solid black;
   background: lightgoldenrodyellow;
+  font-family: sans-serif;
+    font-size: 1.5em;
 }
 th{
   background: black;
   color:white;
 }
 li { background: lightcoral; 
-      font-family: sans-serif;
-      font-size: 1.5em;
+      
    }
 li:nth-child(odd) { background: lightblue; }
 hr { background: black; }
