@@ -19,8 +19,26 @@ p {
   font-size: 20px;
 }
 
+ul {
+  list-style-type: none; /* Remove bullets */
+}
+.upperlevel li{
+    list-style-type: upper-roman;
+  
+}
+.lowerlevel li{
+  list-style-type: lower-roman;
+}
+.lowerlevel li:nth-child(even){
+  background: #CCC
+}
+.lowerlevel li:nth-child(odd){
+  background: #FFF
+}
+
 a:hover {
   background-color: yellow;
+  text-decoration: none;
 }
 .container {  display: grid;
   grid-template-columns: 0.9fr 1.1fr 1fr;
@@ -48,21 +66,20 @@ a:hover {
 
 
 
-table, th, td {
+.page2table table, th, td {
   border: 1px solid black;
-  background: lightgoldenrodyellow;
+  background: lightsteelblue;
   font-family: sans-serif;
     font-size: 1.5em;
-}
-th{
-  background: black;
   color:white;
-}
-li { background: lightcoral; 
-      
-   }
-li:nth-child(odd) { background: lightblue; }
-hr { background: black; }
 
-ul{ background: lightgreen}
-ol{ background: lightcyan}
+}
+.page2table li:nth-child(odd){
+    background: lightblue;
+  }
+.page2table li:nth-child(even){
+    background: lightcoral;
+  }
+
+
+
