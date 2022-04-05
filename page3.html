@@ -16,16 +16,14 @@
 
 <nav class="Nav">
 <ul>
-<li><a href="./index.html">Home</a></li>
-<li><a href="./page1.html">page 1</a></li>
-<li><a href="./page2.html">page 2</a></li>
-<li><a href="./page3.html">page 3</a></li>
+<li tabindex="1"><a href="./index.html">Home</a></li>
+<li tabindex="2"><a href="./page1.html">Page 1</a></li>
+<li tabindex="3"><a href="./page2.html">Page 2</a></li>
+<li tabindex="4"><a href="./page3.html">page 3</a></li>
 
-<li><a href="https://www.columbusstate.edu/">CSU Mainpage</a></li>
+<li tabindex="5"><a href="https://www.columbusstate.edu/">CSU Mainpage</a></li>
 </ul>
 </nav>
-
-    
 
 <main class="Main">
   
@@ -35,45 +33,57 @@
 
 
   <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" maxlength="50" size><br><br>
+  <input tabindex="6" type="text" id="lname" name="lname" maxlength="50" size="50"><br><br>
 
   
   <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" maxlength="50" size><br><br>
+  <input  tabindex="7" type="text" id="fname" name="fname" maxlength="50" size="50"><br><br>
 
 
   <label for="birthyear">birth year:</label>
-  <input type="number" id="birthyear" name="birthyear" min="1900" max="2022"><br><br>
+  <input  tabindex="8" type="number" id="birthyear" name="birthyear" min="1900" max="2022"><br><br>
   
   
   <label for="email">Your email:</label>
   <input type="email" id="email" name="email"><br><br>
 
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username" minlength="5" maxlength = "10" required><br><br>
+  <input  tabindex="9" type="text" id="username" name="username" minlength="5" maxlength = "10" required><br><br>
 
   
   <label for="password">Password:</label>
-  <input type="password" id="password" name="password" minlength="8" required><br><br>
+  <input tabindex="10"  type="password" id="password" name="password" minlength="8" required><br><br>
 
     <label for="repassword">Re-enter Password:</label>
-  <input type="password" id="repassword" name="repassword" minlength="8" required><br><br>
+  <input  tabindex="11" type="password" id="repassword" name="repassword" minlength="8" required><br><br>
 
    <label for="telephone">Enter Telephone:</label>
-  <input type="tel" id="telephone" name="telephone" placeholder="123-456-7890"
+  <input  tabindex="12" type="tel" id="telephone" name="telephone" placeholder="123-456-7890"
      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
 
  
-<! –– most of these lines of code for form were from w3schools.org They work to help the form function and I mainly modified the parameters -->
+    <!--most of the form code from w3 schools, edited parameters-->
+
 
 <script src="./script.js"></script>
-<input type="submit" name = "submitbutton" value="Submit">
-<input type="reset" name = "resetbutton">
+<input  tabindex="13" type="submit" name = "submitbutton" value="Submit">
+<input  tabindex="14" type="reset" name = "resetbutton">
 
   
 </form>
+  
 </main>
 
+
+<aside class = "Aside">
+  <svg  tabindex="15" svg id="retangle" title="Blue Rectangle" role="figure" width="400" height="300" aria-labelledby="description">
+    <desc id="description">A rectangle made with svg</desc>
+  <rect width="100" height="200" style="fill:rgb(0,242,255);stroke-width:10;stroke:rgb(0,0,0)" />
+
+    <!-- svg code from w3 schools for the svg, edited parameters-->
+</svg>
+</aside>
+  
 <footer class="Footer">
     <p>Stephen Lee</p>
     <p>Phone: (762)-583-3180</p>

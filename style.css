@@ -40,16 +40,23 @@ a:hover {
   background-color: yellow;
   text-decoration: none;
 }
-.container {  display: grid;
-  grid-template-columns: 0.9fr 1.1fr 1fr;
-  grid-template-rows: 0.7fr 1.6fr 0.7fr;
+
+
+
+
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 0.8fr 1.4fr 0.8fr; 
   gap: 15px;
-  grid-auto-flow: row;
-  grid-template-areas:
+  grid-template-areas: 
     "Header Header Header"
-    "Nav Main Main"
-    "Footer Footer Footer";
+    "Nav Main Aside"
+    "Footer Footer Footer"; 
 }
+
+
 
 .Header { grid-area: Header; 
         background-color: lightseagreen;
@@ -61,8 +68,37 @@ a:hover {
 .Main { grid-area: Main; 
       background-color: lightgreen;}
 
+.Aside { grid-area: Aside; 
+        background-color: #f792e9;}
+
 .Footer { grid-area: Footer; 
         background-color: lightsteelblue;}
+
+
+@media only screen and (max-width: 320px) { 
+  body {
+  background-color: #f50000;
+  }
+  
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header Header Header"
+    "Nav Nav Nav"
+    "Main Main Main"
+    "Aside Aside Aside"
+    "Footer Footer Footer"; 
+}
+
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
 
 
 
